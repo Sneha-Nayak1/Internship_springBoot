@@ -1,0 +1,3 @@
+server.port=8080
+server.mvc.view.prefix=/webpage/
+server.mvc.view.suffix=.jsp

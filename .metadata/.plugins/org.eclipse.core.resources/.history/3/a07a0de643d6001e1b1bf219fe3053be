@@ -1,0 +1,18 @@
+package com.example.demo;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
+
+@Controller
+public class CourseController {
+	@RequestMapping("courses")
+	public String courses(String name, HttpSession session) {
+		
+		
+		session.setAttribute("cname",name);
+		return "course";
+	}
+}
